@@ -8,7 +8,7 @@
 
 Mount your existing Laravel installation to /var/www
 
-    docker run -p 8080:80 -p 8443:443 -v /home/user/code/laravel:/var/www -d rayprogramming/laravel-php-docker:7.2
+    docker run -p 8080:80 -p 8443:443 -v /home/user/code/laravel:/var/www -d fivestartechnology/laravel-php-docker:7.2
 
 
 ### docker-compose example
@@ -31,7 +31,7 @@ services:
         image: redis
 
     web:
-        image: rayprogramming/laravel-php-docker:7.2
+        image: fivestartechnology/laravel-php-docker:7.2
         depends_on:
             - db
             - redis
